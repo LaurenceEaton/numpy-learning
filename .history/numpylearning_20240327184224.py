@@ -63,7 +63,3 @@ def dataTypes():
 def copyVSview():
     arr = np.array([1, 2, 3, 4, 5])
     x = arr.copy()
-    # copy is not affected by changes to the original array
-
-    x = arr.view()
-    # view IS affected by changes to the original array
