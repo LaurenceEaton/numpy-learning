@@ -74,39 +74,8 @@ def arrayShape():
     print(arr.shape)
     # above returns (2, 4), which means that the array has 2 dimensions, where the first dimension has 2 elements and the second has 4.
 
-def arrayReshape():
     arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 
     newarr = arr.reshape(4, 3)
-    # changes the shape to 2D with 4 arrays and 3 elements in each array (12 elements in total
-    
-    newarr = arr.reshape(2, 3, 2)
-    # 2 dimensions each with 3 arrays that each contain 2 elements
-    
-    arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
-    print(arr.reshape(2, 4).base)
-    # checks if the array is a copy or view. (if it returns the original array, it is a view)
-
-    newarr = arr.reshape(2, 2, -1)
-    # can have ONE unknown dimension. NumPy calculates it. (in this case 2 dimensions with 2 arrays each therefore will 
-    # calculate 2 elements per array for you)
-
-    arr = np.array([[1, 2, 3], [4, 5, 6]])
-
-    newarr = arr.reshape(-1)
-    # output >>> [1 2 3 4 5 6]
-    # reshape with (-1) "flattens" an array back to 1 dimension
-
-def arrayIterating():
-    arr = np.array([[1, 2, 3], [4, 5, 6]])
-
-    for x in arr:
-        print(x)
-    # output:
-    # [1 2 3]
-    # [4 5 6]
-
-
-
-    
+    # changes the shape to 2D with 4 arrays and 3 elements in each dimension
 

@@ -102,9 +102,6 @@ def arrayIterating():
 
     for x in arr:
         print(x)
-    # output:
-    # [1 2 3]
-    # [4 5 6]
 
 
 

@@ -82,30 +82,6 @@ def arrayReshape():
     
     newarr = arr.reshape(2, 3, 2)
     # 2 dimensions each with 3 arrays that each contain 2 elements
-    
-    arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
-    print(arr.reshape(2, 4).base)
-    # checks if the array is a copy or view. (if it returns the original array, it is a view)
-
-    newarr = arr.reshape(2, 2, -1)
-    # can have ONE unknown dimension. NumPy calculates it. (in this case 2 dimensions with 2 arrays each therefore will 
-    # calculate 2 elements per array for you)
-
-    arr = np.array([[1, 2, 3], [4, 5, 6]])
-
-    newarr = arr.reshape(-1)
-    # output >>> [1 2 3 4 5 6]
-    # reshape with (-1) "flattens" an array back to 1 dimension
-
-def arrayIterating():
-    arr = np.array([[1, 2, 3], [4, 5, 6]])
-
-    for x in arr:
-        print(x)
-    # output:
-    # [1 2 3]
-    # [4 5 6]
-
 
 
     

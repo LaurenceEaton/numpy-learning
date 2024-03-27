@@ -91,21 +91,6 @@ def arrayReshape():
     # can have ONE unknown dimension. NumPy calculates it. (in this case 2 dimensions with 2 arrays each therefore will 
     # calculate 2 elements per array for you)
 
-    arr = np.array([[1, 2, 3], [4, 5, 6]])
-
-    newarr = arr.reshape(-1)
-    # output >>> [1 2 3 4 5 6]
-    # reshape with (-1) "flattens" an array back to 1 dimension
-
-def arrayIterating():
-    arr = np.array([[1, 2, 3], [4, 5, 6]])
-
-    for x in arr:
-        print(x)
-    # output:
-    # [1 2 3]
-    # [4 5 6]
-
 
 
     

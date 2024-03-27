@@ -94,17 +94,6 @@ def arrayReshape():
     arr = np.array([[1, 2, 3], [4, 5, 6]])
 
     newarr = arr.reshape(-1)
-    # output >>> [1 2 3 4 5 6]
-    # reshape with (-1) "flattens" an array back to 1 dimension
-
-def arrayIterating():
-    arr = np.array([[1, 2, 3], [4, 5, 6]])
-
-    for x in arr:
-        print(x)
-    # output:
-    # [1 2 3]
-    # [4 5 6]
 
 
 
